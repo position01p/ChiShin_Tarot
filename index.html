@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/6252b892c6.js" crossorigin="anonymous"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/index.js"></script>
+
+  <title>綺忻的文字樹</title>
+  <style>
+    body {
+      /* 透明度 0.6 的黑色半透明遮罩*/
+      background-color: rgb(0, 0, 0, 0.5);
+      /*背景設計為混和*/
+      background-blend-mode: multiply;
+      /*背景圖片*/
+      background-image: url("photo/pexels-alex-fu-2081051.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .checkborder {
+      border: 1px solid red;
+    }
+
+    #index-photo img,
+    #index-photo-2,
+    #index-text-1,
+    #index-text-2,
+    footer {
+      display: none;
+    }
+  </style>
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">綺忻的文字樹</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">作品集目</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./service.html">服務項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contactMe.html">聯絡我</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+
+  <div class="container mt-5">
+    <!--插入Grid-->
+    <!-- 第一行 -->
+    <div class="row ">
+      <!--頭像圖片-->
+      <div id="index-photo" class="col-sm-4 d-flex justify-content-center ">
+        <img src="./photo/s__12140563_e6ada3e696b9e5bda2.jpg" class="img-thumbnail rounded-circle align-self-center"
+          width="200px" alt="...">
+      </div>
+      <!-- 右邊介紹 -->
+      <div id="index-text-1" class="col-sm-8 mt-5 ">
+        <h3 class="text-light  ml-5 ">
+          歡迎來到
+          <strong class="text-white">綺忻</strong>
+          的文字樹
+        </h3>
+        <p class="lead text-white ml-5">
+          我是一個斜槓人，不滿足於單個專業，人生就是要多元的嘗試，時而寫文、時而拍攝，也偶爾直播。
+        </p>
+        <ul class="list-unstyled text-white ml-5">
+          <li>如果我們的人生是場戲</li>
+          <li>以下就是曾經嘗試經營的專業：
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 第一行結束 -->
+    <!-- 第二行 -->
+    <div class="row d-flex ">
+      <!-- 左列 -->
+      <div class="col-sm-4 d-flex justify-content-center ">
+        <h5 id="index-photo-2" class="text-white">
+          ※詳細項目可觀看相關之<em><a href="portfolio_1.html" style="text-decoration: none;color: white;">作品集</a></em>
+        </h5>
+      </div>
+      <!-- 右列 -->
+      <div id="index-text-2" class="col-sm-8 align-content-start" style="height: 500px;">
+        <div class="row ">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  社工系專業
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol class="list-group list-group-numbered">
+                    <li class="list-group-item list-group-item-secondary">助人工作者</li>
+                    <li class="list-group-item list-group-item-secondary">心理學</li>
+                    <li class="list-group-item list-group-item-secondary">法律</li>
+                    <li class="list-group-item list-group-item-secondary">社會學</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  文章寫作
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol class="list-group list-group-numbered">
+                    <li class="list-group-item list-group-item-secondary">行銷文案</li>
+                    <li class="list-group-item list-group-item-secondary">自媒體經營</li>
+                    <li class="list-group-item list-group-item-secondary">方格子作家</li>
+                    <li class="list-group-item list-group-item-secondary">Podcast經營</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  社群企劃
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol class="list-group list-group-numbered">
+                    <li class="list-group-item list-group-item-secondary">Youtube經營</li>
+                    <li class="list-group-item list-group-item-secondary">粉絲專頁經營</li>
+                    <li class="list-group-item list-group-item-secondary">Facebook社團經營</li>
+                    <li class="list-group-item list-group-item-secondary">各種平台直播經營</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  網站設計
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol class="list-group list-group-numbered">
+                    <li
+                      class="list-group-item list-group-item-secondary list-group-item list-group-item-secondary-secondary">
+                      圖片切版</li>
+                    <li
+                      class="list-group-item list-group-item-secondary list-group-item list-group-item-secondary-secondary">
+                      Html模板設計</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第二行結束 -->
+    <!--Grid結束-->
+  </div>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+  <footer class="bg-light py-2 mt-5" style="bottom:0px;">
+    <div class="container mx-3">
+      <div><i class="far fa-copyright"></i> copyright 2021 </div>
+      <div></div>
+    </div>
+  </footer>
+</body>
+
+
+</html>

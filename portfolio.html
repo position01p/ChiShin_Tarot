@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/portfolio.js"></script>
+    <title>綺忻的文字樹</title>
+    <style>
+        .tag {
+            display: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgb(201, 201, 201, 1.0);
+        }
+
+
+        /*產品輪播頁大小調整*/
+        /*直接把圖片元件改成背景圖片*/
+        .header-carousel-item {
+            /* width: 400px;
+            height: auto; */
+            height: 450px;
+
+        }
+
+        .bg-cover {
+            background-size: cover;
+            background-position: center center;
+        }
+
+        /*增加文字的背景色*/
+        .carousel-caption {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        /*斷點設計*/
+        @media (max-width: 768px) {
+            .accordion {
+                display: none;
+            }
+
+            #accordion-text {
+                display: none;
+            }
+
+            .item-size {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">綺忻的文字樹</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">作品集目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./service.html">服務項目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactMe.html">聯絡我</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+
+<body class="tag">
+    <!-- 輪播Carousel -->
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5 " data-bs-ride="carousel">
+        <!-- 輪播切換按鍵 -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <!-- 切換鍵結束 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active header-carousel-item bg-cover"
+                style="background-image: url('./photo/products/pexels-pixabay-267106.jpg');" data-bs-interval="2000">
+                <div class="carousel-caption  d-md-block">
+                    <a class="text-reset text-decoration-none" href="#">
+                        <h5 class="fw-bold">行銷企劃管理</h5>
+                    </a>
+                    <p>知悉目前常用的行銷平台及SEO等演算計算</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover"
+                style="background-image:url('./photo/products/pexels-sergei-akulich-2539386.jpg');" data-bs-interval="2000">
+                <div class="carousel-caption  d-md-block">
+                    <a class="text-reset text-decoration-none" href="#">
+                        <h5 class="fw-bold">專欄作家</h5>
+                    </a>
+                    <p>經營如痞客幫部落格或方格子等專欄文章之寫作工作</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover"
+                style="background-image:url('./photo/products/pexels-sid-cosmo-3887962.jpg');" data-bs-interval="2000">
+                <div class="carousel-caption  d-md-block">
+                    <a class="text-reset text-decoration-none" href="#">
+                        <h5 class="fw-bold">影音媒體人</h5>
+                    </a>
+                    <p>經營過聲播、直播、Youtuber等影音平台</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover"
+                style="background-image:url('./photo/products/pexels-sid-cosmo-3887962.jpg');" data-bs-interval="2000">
+                <div class="carousel-caption  d-md-block">
+                    <a class="text-reset text-decoration-none" href="#">
+                        <h5 class="fw-bold">命理專家</h5>
+                    </a>
+                    <p>執業9年的塔羅占卜 以此業為主發展多元的傳播管道</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover"
+                style="background-image:url('./photo/products/pexels-sid-cosmo-3887962.jpg');" data-bs-interval="2000">
+                <div class="carousel-caption  d-md-block">
+                    <a class="text-reset text-decoration-none" href="#">
+                        <h5 class="fw-bold">網頁設計</h5>
+                    </a>
+                    <p>管理自媒體特別與團隊合作設計網站</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    <!-- 作品集介紹 -->
+    <!-- <p id="accordion-text" class="text-dark fs-3 font-monospace fst-italic ms-5 mt-5">"磨練專長需要時間，但無需要限制它的方向"</p> -->
+
+    <!-- 分頁介紹 Accordion變形版 -->
+    <!-- 頁首 -->
+    <div class="accordion mx-5 mt-5 " id="accordionExample">
+        <div class="accordion-item">
+            <div class="row d-flex flex-nowrap" width="100%">
+                <div class="col">
+                    <h5 class="accordion-header" id="headingOne">
+                        <button class="accordion-button text-center" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            行銷企劃管理
+                        </button>
+                    </h5>
+                </div>
+                <div class="col">
+                    <h5 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            專欄作家
+                        </button>
+                    </h5>
+                </div>
+                <div class="col">
+                    <h5 class="accordion-header" id="headingThree">
+                        <button class="accordion-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            影音媒體人
+                        </button>
+                    </h5>
+                </div>
+                <div class="col">
+                    <h5 class="accordion-header" id="headingThree">
+                        <button class="accordion-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            命理專家
+                        </button>
+                    </h5>
+                </div>
+                <div class="col">
+                    <h5 class="accordion-header" id="headingThree">
+                        <button class="accordion-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                            網頁設計
+                        </button>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <!-- Accordion內容 -->
+        <div class="accordion-item" style="height:500px;">
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- 介紹作品集內容-part1 -->
+                    <div class="row">
+                        <div class="col card" style="width: 18rem;">
+                            <img src="./photo/products/profolio/1-1-2.png" class="card-img-top" alt="..."
+                                style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text  fw-bold">
+                                    ▲粉專操作半月，增200粉絲<br>
+                                </p>
+                                <p>
+                                    替業主經營粉絲專頁、製作有趣的貼文及梗圖，此圖主要是模仿uber eats的廣告詞跟顏色
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col card" style="width: 18rem;">
+                            <img src="./photo/products/profolio/fb.png" class="card-img-top" alt="..." style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text  fw-bold">
+                                    ▲佛系經營FB專頁八年，粉絲口碑相傳即達1500按讚數<br>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col card" style="width: 18rem;">
+                            <img src="./photo/products/profolio/2021-02-05_140003-2.png" class="card-img-top" alt="..."
+                                style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text  fw-bold">
+                                    ▲拓展新客源！增加粉絲專頁貼文三倍的觸及率<br>
+                                </p>
+                                <p>
+                                    約兩禮拜的時間，接觸到陌生客群，讓老闆娘接單接到手軟。使用飢餓行銷的方式，
+                                    觸及率也從他本來的100初變成300多，最多曾達到500多的觸及率
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- 介紹作品集內容-part2 -->
+                    <div class="row">
+                        <div class="col card" style="width: 18rem;">
+                            <img src="./photo/products/profolio/tarot1-2.jpg" class="card-img-top" alt="..."
+                                style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text  fw-bold">
+                                    ▲經營blog八年，單篇文章最高六萬多瀏覽數<br />
+                                </p>
+                                <p>
+                                    經營部落格8年，內容多為撰寫塔羅占卜測驗的文章，最高瀏覽數6萬7千人次
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col card" style="width: 18rem;">
+                            <img src="./photo/products/profolio/focus-2.png" class="card-img-top" alt="..."
+                                style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text  fw-bold">
+                                    ▲方格子寫作者，文章被編輯推薦的機率高達85%！<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- 介紹作品集內容-part3 -->
+                    <div class="row">
+                        <div class="col card" style="width: 18rem;">
+                            <img src="./photo/products/profolio/youtubechannel-2.png" class="card-img-top" alt="..."
+                                style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">
+                                    ▲經營Yotube半年，點閱影片數3.9萬<br>
+                                </p>
+                                <p>
+                                    花半年的時間達成5000人次訂閱，最高影片點閱數3.9萬。
+                                    影片會上字幕以及簡單的轉場效果。
+                                </p>
+                                <p class="fs-6 text-muted">
+                                    ※注重智慧財產權
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col card" style="width: 18rem;">
+                            <img src="./photo/products/profolio/photoshop-2.png" class="card-img-top" alt="..."
+                                style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">
+                                    ▲Photoshop美化照片、去背不是問題！<br>
+                                </p>
+                                <p>
+                                    基本去背、汙點修改，修得非常自然，如果不透漏的話，可能看不出臉上也有修圖
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col card" style="width: 18rem;">
+                            <img src="./photo/products/profolio/premire-2.png" class="card-img-top" alt="..."
+                                style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">
+                                    ▲Premiere剪接影片，上字幕、快轉輕鬆搞定！<br>
+                                </p>
+                                <p>
+                                    隨意剪的一隻Vlog
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- 介紹作品集內容-part4 -->
+                    <div class="row">
+                        <div class="col card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="..." style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">
+                                    ▲經營9年的占卜，給予詢問者需要的人生方向建言<br>
+                                </p>
+                                <p>
+                                    XXXX
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="..." style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">
+                                    ▲建立在塔羅基礎再搭配寵物小知識，讓飼主能理解家裡小寶貝所思所想<br>
+                                </p>
+                                <p>
+                                    XXX
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- 介紹作品集內容-part5 -->
+                    <div class="row">
+                        <div class="col card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="..." style="width:400px;">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">
+                                    網站即本團隊成員製作，歡迎瀏覽<br>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  -->
+</body>
+<footer class="bg-light py-3 mt-5" style="bottom:0px;"></footer>
+
+</html>

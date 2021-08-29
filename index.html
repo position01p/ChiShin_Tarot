@@ -24,6 +24,18 @@
       background-repeat: no-repeat;
     }
 
+    .navbar-change {
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .container-shift {
+      position: relative;
+      top: 56px;
+
+    }
+
     .checkborder {
       border: 1px solid red;
     }
@@ -35,10 +47,16 @@
     footer {
       display: none;
     }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
   </style>
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-change bg-light ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">綺忻的文字樹</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -71,10 +89,10 @@
 
 <body>
 
-  <div class="container mt-5">
+  <div class="container container-shift pt-5">
     <!--插入Grid-->
     <!-- 第一行 -->
-    <div class="row ">
+    <div class="row">
       <!--頭像圖片-->
       <div id="index-photo" class="col-sm-4 d-flex justify-content-center ">
         <img src="./photo/s__12140563_e6ada3e696b9e5bda2.jpg" class="img-thumbnail rounded-circle align-self-center"
@@ -103,7 +121,7 @@
       <!-- 左列 -->
       <div class="col-sm-4 d-flex justify-content-center ">
         <h5 id="index-photo-2" class="text-white">
-          ※詳細項目可觀看相關之<em><a href="portfolio_1.html" style="text-decoration: none;color: white;">作品集</a></em>
+          ※詳細項目可觀看相關之<em><a href="portfolio.html" style="text-decoration: none;color: white;">作品集</a></em>
         </h5>
       </div>
       <!-- 右列 -->

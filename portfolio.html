@@ -11,14 +11,26 @@
     <script src="./js/portfolio.js"></script>
     <title>綺忻的文字樹</title>
     <style>
-        .portfolio.accordion-button.collapsed{
-            background-color:#fff;
-            color: #333;   
+        .navbar-change {
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .container-shift {
+            position: relative;
+            /* top: 56px; */
+
+        }
+
+        .portfolio.accordion-button.collapsed {
+            background-color: #fff;
+            color: #333;
         }
 
         .portfolio.accordion-button.collapsed:hover,
-        .portfolio.accordion-button{
-            color:#fff;
+        .portfolio.accordion-button {
+            color: #fff;
             background-color: #333;
         }
 
@@ -64,10 +76,12 @@
                 display: none;
             }
         }
+
+
     </style>
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-change bg-light ">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">綺忻的文字樹</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -102,7 +116,7 @@
 <body class="tag">
     <!-- 輪播Carousel -->
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5 " data-bs-ride="carousel">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide container-shift pt-5 " data-bs-ride="carousel">
         <!-- 輪播切換按鍵 -->
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -128,7 +142,8 @@
                 </div>
             </div>
             <div class="carousel-item header-carousel-item bg-cover"
-                style="background-image:url('./photo/products/pexels-sergei-akulich-2539386.jpg');" data-bs-interval="2000">
+                style="background-image:url('./photo/products/pexels-sergei-akulich-2539386.jpg');"
+                data-bs-interval="2000">
                 <div class="carousel-caption  d-md-block">
                     <a class="text-reset text-decoration-none" href="#">
                         <h5 class="fw-bold">專欄作家</h5>
@@ -185,8 +200,9 @@
             <div class="row d-flex flex-nowrap" width="100%">
                 <div class="col">
                     <h5 class="accordion-header" id="headingOne">
-                        <button class="portfolio accordion-button collapsed text-center" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="portfolio accordion-button collapsed text-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
                             行銷企劃管理
                         </button>
                     </h5>
@@ -201,24 +217,27 @@
                 </div>
                 <div class="col">
                     <h5 class="accordion-header" id="headingThree">
-                        <button class="portfolio accordion-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="portfolio accordion-button text-center collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
                             影音媒體人
                         </button>
                     </h5>
                 </div>
                 <div class="col">
                     <h5 class="accordion-header" id="headingThree">
-                        <button class="portfolio accordion-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="portfolio accordion-button text-center collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseThree">
                             命理專家
                         </button>
                     </h5>
                 </div>
                 <div class="col">
                     <h5 class="accordion-header" id="headingThree">
-                        <button class="portfolio accordion-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="portfolio accordion-button text-center collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseThree">
                             網頁設計
                         </button>
                     </h5>
@@ -233,8 +252,7 @@
                     <!-- 介紹作品集內容-part1 -->
                     <div class="row">
                         <div class="col card" style="width: 18rem;">
-                            <img src="./photo/products/profolio/1-1-2.png" class="card-img-top" alt="..."
-                                >
+                            <img src="./photo/products/profolio/1-1-2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text  fw-bold">
                                     ▲粉專操作半月，增200粉絲<br>
@@ -246,7 +264,7 @@
                         </div>
 
                         <div class="col card" style="width: 18rem;">
-                            <img src="./photo/products/profolio/fb-2.png" class="card-img-top" alt="..." >
+                            <img src="./photo/products/profolio/fb-2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text  fw-bold">
                                     ▲佛系經營FB專頁八年，粉絲口碑相傳即達1500按讚數<br>
@@ -255,8 +273,7 @@
                             </div>
                         </div>
                         <div class="col card" style="width: 18rem;">
-                            <img src="./photo/products/profolio/2021-02-05_140003-2.png" class="card-img-top" alt="..."
-                                >
+                            <img src="./photo/products/profolio/2021-02-05_140003-2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text  fw-bold">
                                     ▲拓展新客源！增加粉絲專頁貼文三倍的觸及率<br>
@@ -276,8 +293,7 @@
                     <!-- 介紹作品集內容-part2 -->
                     <div class="row">
                         <div class="col card" style="width: 18rem;">
-                            <img src="./photo/products/profolio/tarot1-2.jpg" class="card-img-top" alt="..."
-                                >
+                            <img src="./photo/products/profolio/tarot1-2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text  fw-bold">
                                     ▲經營blog八年，單篇文章最高六萬多瀏覽數<br />
@@ -288,8 +304,7 @@
                             </div>
                         </div>
                         <div class="col card" style="width: 18rem;">
-                            <img src="./photo/products/profolio/focus-2.png" class="card-img-top" alt="..."
-                                >
+                            <img src="./photo/products/profolio/focus-2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text  fw-bold">
                                     ▲方格子寫作者，文章被編輯推薦的機率高達85%！<br>
@@ -305,8 +320,7 @@
                     <!-- 介紹作品集內容-part3 -->
                     <div class="row">
                         <div class="col card" style="width: 18rem;">
-                            <img src="./photo/products/profolio/youtubechannel-2.png" class="card-img-top" alt="..."
-                                >
+                            <img src="./photo/products/profolio/youtubechannel-2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text fw-bold">
                                     ▲經營Yotube半年，點閱影片數3.9萬<br>
@@ -322,8 +336,7 @@
                         </div>
 
                         <div class="col card" style="width: 18rem;">
-                            <img src="./photo/products/profolio/photoshop-2.png" class="card-img-top" alt="..."
-                                >
+                            <img src="./photo/products/profolio/photoshop-2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text fw-bold">
                                     ▲Photoshop美化照片、去背不是問題！<br>
@@ -334,8 +347,7 @@
                             </div>
                         </div>
                         <div class="col card" style="width: 18rem;">
-                            <img src="./photo/products/profolio/premire-2.png" class="card-img-top" alt="..."
-                                >
+                            <img src="./photo/products/profolio/premire-2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text fw-bold">
                                     ▲Premiere剪接影片，上字幕、快轉輕鬆搞定！<br>
@@ -354,7 +366,7 @@
                     <!-- 介紹作品集內容-part4 -->
                     <div class="row">
                         <div class="col card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="..." >
+                            <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text fw-bold">
                                     ▲經營9年的占卜，給予詢問者需要的人生方向建言<br>
@@ -366,7 +378,7 @@
                         </div>
 
                         <div class="col card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="..." >
+                            <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text fw-bold">
                                     ▲建立在塔羅基礎再搭配寵物小知識，讓飼主能理解家裡小寶貝所思所想<br>
@@ -385,7 +397,7 @@
                     <!-- 介紹作品集內容-part5 -->
                     <div class="row">
                         <div class="col card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="..." >
+                            <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text fw-bold">
                                     網站即本團隊成員製作，歡迎瀏覽<br>
@@ -413,12 +425,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   -->
 
-  <footer class="bg-light py-2 mt-5" style="bottom:0px;">
-    <div class="container mx-3">
-      <div><i class="far fa-copyright"></i> copyright 2021 </div>
-      <div></div>
-    </div>
-  </footer>
+    <footer class="bg-light py-2 mt-5" style="bottom:0px;">
+        <div class="container mx-3">
+            <div><i class="far fa-copyright"></i> copyright 2021 </div>
+            <div></div>
+        </div>
+    </footer>
 </body>
 
 </html>
